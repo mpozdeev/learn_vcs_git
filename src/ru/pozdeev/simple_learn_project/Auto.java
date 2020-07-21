@@ -2,9 +2,18 @@ package ru.pozdeev.simple_learn_project;
 
 public class Auto {
 
+    private CarManufacturer manufacturer;
     private String modelName;
-    private String bodyStyle;
-    private String driveType;
+    private BodyStyleCar bodyStyle;
+    private DriveStyleCar driveType;
+
+    public CarManufacturer getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(CarManufacturer manufacturer) {
+        this.manufacturer = manufacturer;
+    }
 
     public String getModelName() {
         return modelName;
@@ -14,28 +23,29 @@ public class Auto {
         this.modelName = modelName;
     }
 
-    public String getBodyStyle() {
+    public BodyStyleCar getBodyStyle() {
         return bodyStyle;
     }
 
-    public void setBodyStyle(String bodyStyle) {
+    public void setBodyStyle(BodyStyleCar bodyStyle) {
         this.bodyStyle = bodyStyle;
     }
 
-    public String getDriveType() {
+    public DriveStyleCar getDriveType() {
         return driveType;
     }
 
-    public void setDriveType(String driveType) {
+    public void setDriveType(DriveStyleCar driveType) {
         this.driveType = driveType;
     }
 
     @Override
     public String toString() {
         return "Auto{" +
-                "modelName='" + modelName + '\'' +
-                ", bodyStyle='" + bodyStyle + '\'' +
-                ", driveType='" + driveType + '\'' +
+                "manufacturer=" + manufacturer +
+                ", modelName='" + modelName + '\'' +
+                ", bodyStyle=" + bodyStyle +
+                ", driveType=" + driveType +
                 '}';
     }
 }
