@@ -7,7 +7,13 @@ public class App {
         auto1.setBodyStyle("SUV");
         auto1.setDriveType("4WD");
 
+        Auto auto2 = new Auto();
+        auto2.setModelName("BMW M3");
+        auto2.setBodyStyle("Sedan");
+        auto2.setDriveType("RWD");
+
 
         System.out.println(auto1);
+        System.out.println(auto2);
     }
 }
