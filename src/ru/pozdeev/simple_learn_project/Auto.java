@@ -6,6 +6,15 @@ public class Auto {
     private String bodyStyle;
     private String driveType;
 
+    public Auto() {
+    }
+
+    public Auto(String modelName, String bodyStyle, String driveType) {
+        this.modelName = modelName;
+        this.bodyStyle = bodyStyle;
+        this.driveType = driveType;
+    }
+
     public String getModelName() {
         return modelName;
     }
